@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#responsive-menu').mobileMenu();
+		});
+	</script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+		$( function() {
+			$( "input[type='checkbox']" ).checkboxradio();
+			$( "input[type='radio']" ).checkboxradio();
+			$( "#speed" ).selectmenu();
+			$( "#number" ) .selectmenu()
+			$( "input[type=submit]" ).button();
+			$( "input[type=submit]" ).click( function( event ) {
+			event.preventDefault();
+			} );
+			$( document ).tooltip();
+		} );
+		</script>
+
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu" >
+				<li title="Vecta Corporation provides scalable business solutions for your company"><a href="index.html" >Home</a></li>
+				<li title="Find more about us and our management team"><a href="aboutus.html">About Us</a></li>
+				<li title="Vecta Corp. offers 3 solutions for prospering, converting, and retaining customers"><a href="solutions.html">Solutions</a></li>
+				<li title="Find the latest technical resources for your business"><a href="support.html">Support</a></li>
+				<li title="Contact Us for more information"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="eleven columns">
+			<h4>Contact Us</h4>
+			<form name="contactform" action="http://www.vectacorp.com/vc/scripts/contactus.asp" method="post">
+				<fieldset>
+			    <legend>Contact a Sales Representative</legend>
+			    <label for="number">Name:</label>
+			    <input type="text" name="name" maxlength="30" required="">
+			    <label for="number">Company Name:</label>
+			    <input type="text" name="companyname" maxlength="30" required="">
+				<label for="number">Phone:</label>
+			    <input type="tel" name="phonenumber" maxlength="25" required="" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Format: 555-555-5555">
+			    
+				<label for="number">Email:</label>
+				<input type="email" name="email" maxlength="30" required="">
+				<div class="widget">
+							<legend> What VectaCorp products are you interested in?</legend><br>
+							<label for="checkbox-1">vProspect 2.0</label>
+							<input type="checkbox" name="checkbox-1" id="checkbox-1">
+							<label for="checkbox-2">vConvert 2.0</label>
+							<input type="checkbox" name="checkbox-2" id="checkbox-2">
+							<label for="checkbox-3">vRetain 1.0</label>
+							<input type="checkbox" name="checkbox-3" id="checkbox-3">
+						<br>
+						<br>
+						<legend>What is your current infrastructure?</legend><br>
+						<label for="radio-1">Mac</label>
+						<input type="radio" name="radio-1" id="radio-1">
+						<label for="radio-2">Linux</label>
+						<input type="radio" name="radio-1" id="radio-2">
+						<label for="radio-3">Unix</label>
+						<input type="radio" name="radio-1" id="radio-3">
+						<label for="radio-4">Windows</label>
+						<input type="radio" name="radio-1" id="radio-4">
+						<br>
+						<br>
+						<label for="number">How many employees do you have?</label>
+						<select name="number" id="number">
+						  <option>1-10</option>
+						  <option>11-100</option>
+						  <option>101-1000</option>
+						  <option>More than 1000</option>
+						</select>
+						<br>
+				  		</div>
+				  		<br>
+			    <strong>How did you hear about us?</strong>
+			    <select name="hearaboutus" multiple="" size="5">
+                    <option value="Magazine Ad">Magazine Ad</option>
+                    <option value="Radio Ad">Radio Ad</option>
+                    <option value="TV Ad">TV Ad</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Other">Other</option>
+		        </select>
+			   <strong>Questions or comments for our sales representatives?</strong>
+			    <textarea name="questions" size="30" rows="5"></textarea>
+				<input class="ui-button ui-widget ui-corner-all" type="submit" value="Submit Now">
+		    	</fieldset>
+			</form>
+	    </section>
+		
+		<section id="testimonials" class="five columns">
+			<h4>Map</h4>
+			<p>&nbsp;</p>
+
+		</section>
+	</main>
+</body>
+</html>
